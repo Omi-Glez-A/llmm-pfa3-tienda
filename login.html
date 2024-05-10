@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div id="menu-secundario">
+            <div>
+                <a href="index.html"><img src="img/logo.png" id="logo" alt="logo tienda" /></a>
+            </div>
+            <div class="menu-izq">
+                <div id="buscador" class="menu-izq-item">
+                    <input type="text" placeholder="Buscador" />
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div id="zona-usuario" class="menu-izq-item">
+                    <div id="login" class="usuario-item">
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div id="carrito" class="usuario-item">
+                        <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="menu-principal">
+            <ul class="menu">
+                <li><a href="music.html">Música</a></li>
+                <li><a href="">Libros</a></li>
+                <li><a href="">Merch</a></li>
+                <li><a href="">Segunda mano</a></li>
+                <li><a href="">Ofertas</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure id="img-cabecera">
+            <img src="img/fotoLogin.jpg" alt="foto tienda">
+        </figure>
+        <h1>Regístrate!</h1>
+        <form action="" id="form-login">
+            <div class="form-container">
+              <p>Por favor, rellena este formulario para crear una cuenta de cliente.</p>
+                    
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Contraseña</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <label for="psw-repeat"><b>Repite la contraseña</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Recordarme
+              </label>
+          
+              <p>Creando una cuenta aceptas nuestros <a href="#" style="color:dodgerblue">Términos y privacidad</a>.</p>
+          
+              <div id="botonesconfirmar">
+                <button type="button" class="cancelbtn">Cancelar</button>
+                <button type="submit" class="signupbtn">Darme de alta!</button>
+              </div>
+            </div>
+          </form>     
+    </main>
+    <footer>
+        <div class="contenido-footer">
+            <div class="footer-item">
+                <h3>Recibe noticias</h3>
+                <div class="contenido-item-footer">
+                    <p>
+                        Exclusives, pre-orders, events, back in stock - don’t miss out,
+                        sign-up to receive our emails.
+                    </p>
+                    <div id="suscribirse">
+                        <input type="text" placeholder="Introduce tu e-mail" />
+                        <button><i class="fa-solid fa-arrow-right"></i></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Síguenos</h3>
+                <div id="enlaces-redes" class="contenido-item-footer">
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Servicio al cliente</h3>
+                <div class="contenido-item-footer">
+                    <ul id="servicio-cliente">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Envíos</a></li>
+                        <li><a href="">Privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="copyright-footer">
+            <p>© 2024 Discorver. All rights reserved. Logo de Canva.</p>
+        </div>
+    </footer>
+
+    <script>
+       
+
+        function myFunction() {
+            var x = document.getElementById("menu-principal");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+</body>
+
+</html>

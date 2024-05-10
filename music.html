@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Música</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div id="menu-secundario">
+            <div>
+                <a href="index.html"><img src="img/logo.png" id="logo" alt="logo tienda" /></a>
+            </div>
+            <div class="menu-izq">
+                <div id="buscador" class="menu-izq-item">
+                    <input type="text" placeholder="Buscador" />
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div id="zona-usuario" class="menu-izq-item">
+                    <div id="login" class="usuario-item">
+                        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                    <div id="carrito" class="usuario-item">
+                        <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="menu-principal">
+            <ul class="menu">
+                <li><a href="">Música</a></li>
+                <li><a href="">Libros</a></li>
+                <li><a href="">Merch</a></li>
+                <li><a href="">Segunda mano</a></li>
+                <li><a href="">Ofertas</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="destacado">
+            <div class="contenedor-slideshow">
+                <div class="slide desvanecer">
+                    <img src="img/music/slideshow-music/pexels-cottonbro-studio-6865916.jpg" alt="foto casetes" />
+                </div>
+                <div class="slide desvanecer">
+                    <img src="img/music/slideshow-music/pexels-elviss-railijs-bitāns-1389429.jpg"
+                        alt="foto vinilo rojo" />
+                </div>
+                <div class="slide desvanecer">
+                    <img src="img/music/slideshow-music/pexels-matthias-groeneveld-4200745.jpg" alt="foto vinilos" />
+                </div>
+            </div>
+        </section>
+        <section id="musica" class="container-paginas">
+            <h1>Música</h1>
+            <section id="detalles">
+                <div class="detalle-popup" id="myDetalle1">
+                    <img src="img/music/musica1.jpg" alt="Suicidal Tendencies" class="izq-popup"/>
+                    <div class="der-popup">
+                        <h2>Suicidal Tendencies</h2>
+                        <h3>22.50 €</h3>
+                        <p>2022 · Album</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Neque corrupti dicta reiciendis ipsa voluptate nisi officia!
+                            Ad odio itaque totam quaerat rem tempora, suscipit
+                            voluptatum unde at, fugit officia libero?</p>
+                        <button type="button" class="btn cancel" onclick="closeDetalle1()">Cerrar</button>
+                    </div>
+                </div>
+                <!-- <div class="detalle-popup" id="myDetalle2">
+                    <img src="img/music/musica1.jpg" alt="Suicidal Tendencies" class="izq-popup"/>
+                    <div class="der-popup">
+                        <h2>Suicidal Tendencies</h2>
+                        <h3>22.50 €</h3>
+                        <p>2022 · Album</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Neque corrupti dicta reiciendis ipsa voluptate nisi officia!
+                            Ad odio itaque totam quaerat rem tempora, suscipit
+                            voluptatum unde at, fugit officia libero?</p>
+                        <button type="button" class="btn cancel" onclick="closeDetalle2()">Cerrar</button>
+                    </div> -->
+                </div>
+
+            </section>
+            <div class="cards-paginas">
+                <div class="fila">
+                    <div class="card">
+                        <img src="img/music/musica1.jpg" alt="Suicidal Tendencies" />
+                        <h3>Suicidal Tendencies</h3>
+                        <p>2022 · Album</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+                    </div>
+                    <div class="card">
+                        <img src="img/music/musica2.jpg" alt="Smirk" />
+                        <h3>Smirk</h3>
+                        <p>2022 · Single</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/music/musica3.jpg" alt="portada" />
+                        <h3>Bush Tetras</h3>
+                        <p>2021 · Album</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/music/musica4.jpg" alt="portada" />
+                        <h3>Mary Bell</h3>
+                        <p>2018 · Album</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="card">
+                        <img src="img/music/musica5.jpg" alt="Islands in the sky" />
+                        <h3>Krimewatch</h3>
+                        <p>2017 · Album</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/music/musica6.jpg" alt="I Am A Wave" />
+                        <h3>Ultrasónicas</h3>
+                        <p>2006 · Single</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/music/musica7.jpg" alt="portada" />
+                        <h3>Isotope Soap</h3>
+                        <p>2021 · Album</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                    <div class="card">
+                        <img src="img/music/musica8.jpg" alt="portada" />
+                        <h3>Feminazgul</h3>
+                        <p>2018 · Album</p>
+                        <button class="open-button" onclick="openDetalle1()">Ver detalles</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="contenido-footer">
+            <div class="footer-item">
+                <h3>Recibe noticias</h3>
+                <div class="contenido-item-footer">
+                    <p>
+                        Exclusives, pre-orders, events, back in stock - don’t miss out,
+                        sign-up to receive our emails.
+                    </p>
+                    <div id="suscribirse">
+                        <input type="text" placeholder="Introduce tu e-mail" />
+                        <button><i class="fa-solid fa-arrow-right"></i></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Síguenos</h3>
+                <div id="enlaces-redes" class="contenido-item-footer">
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <h3>Servicio al cliente</h3>
+                <div class="contenido-item-footer">
+                    <ul id="servicio-cliente">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Envíos</a></li>
+                        <li><a href="">Privacidad</a></li>
+                        <li><a href="">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="copyright-footer">
+            <p>© 2024 Discorver. All rights reserved. Logo de Canva.</p>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "inline-block";
+            setTimeout(showSlides, 3000);
+        }
+
+        function myFunction() {
+            var x = document.getElementById("menu-principal");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+
+        function openDetalle1() {
+            document.getElementById("myDetalle1").style.display = "block";
+        }
+
+        function closeDetalle1() {
+            document.getElementById("myDetalle1").style.display = "none";
+        } 
+
+        // function openDetalle2() {
+        //     document.getElementById("myDetalle2").style.display = "block";
+        // }
+
+        // function closeDetalle2() {
+        //     document.getElementById("myDetalle2").style.display = "none";
+        // } 
+    </script>
+</body>
+
+</html>
